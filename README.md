@@ -8,10 +8,16 @@ git clone git@github.com:smpita/logger.git /var/www/html
 
 ## Configure environment
 
-Set the database to where you want to log the received requests.
+Copy the template or create your own env.
 
 ```
-cp .env.example .env; vi .env
+cp .env.example .env
+```
+
+Generate an application key
+
+```
+php artisan key:generate
 ```
 
 ## Install dependencies
