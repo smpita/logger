@@ -47,6 +47,7 @@ class Log extends Model
         $data['host'] = $request->getHost();
         $data['header'] = $request->header();
         $data['meta'] = (string) $request;
+
         return static::create($data);
     }
 }
